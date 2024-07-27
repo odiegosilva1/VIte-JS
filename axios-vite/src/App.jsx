@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
-import axios from "axios";
+import axiosInstance from "./helpers/axios-instance";
 import "./App.css";
 import { useEffect, useState } from "react";
 
@@ -11,8 +11,8 @@ function App() {
 
   // Chama apenas uma vez
   useEffect(() => {
-    axios
-      .get(" https://pokeapi.co/api/v2/pokemon/")
+    axiosInstance
+      .get("pokemon")
       .then((res) => {
         setPokemonList(res.data.results);
       })
