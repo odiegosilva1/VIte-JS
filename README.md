@@ -1,6 +1,6 @@
 ## Initial confg vite project
 
-´´´js
+```js
 npm create vite@latest
 
 ´´´
@@ -20,3 +20,4 @@ npm run dev
 
 ´´´
 A repo to my front-end studies.
+```
